@@ -1,0 +1,9 @@
+.project {
+    display: flex;
+}
+
+.mockup {
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 50px);
+}

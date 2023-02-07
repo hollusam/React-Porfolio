@@ -1,0 +1,17 @@
+.navbar-nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 10vh;
+}
+
+nav {
+    display: block;
+}
+
+.navbar-nav a {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.navbar-nav li {
+    margin: 15px;
+}

@@ -1,13 +1,12 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
 import './style.css';
 
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-md navbar-light bg-light">
+        <nav className="navbar navbar-expand-md">
         <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav mb-5 ml-auto top-nav">
                 <li className="nav-item active">
                     <a className="nav-link" href="#">Home<span className="sr-only"></span></a>
                 </li>

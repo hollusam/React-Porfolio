@@ -1,48 +1,31 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Col from '../Col';
+import Row from '../Row';
+import "./style.css";
 
-class ProjectGallery extends Component {
-  render() {
-
-    if (this.props.data) {
-      var projects = this.props.data.projects.map(function (projects) {
-        var projectImage = 'images/portfolio/' + projects.image;
-        
-        return (
-          <div key={projects.title} className="columns portfolio-item">
-            <div className="item-wrap">
-              <a href={projects.url} target="_blank" title={projects.title}>
-                <img alt={projects.title} src={projectImage} />
-                <div className="overlay">
-                  <div className="portfolio-item-meta">
-                    <h5>{projects.title}</h5>
-                    <p>{projects.category}</p><br />
-                    <p>{projects.info}</p>
-                  </div>
-                </div>
-              </a>
-            </div>
+function ProjectGallery({ title, text, imgUrl, link, live }) {
+  return (
+    <div className="container project-container">
+      {/* <div className="project-name">
+                    <h2>Projects</h2>
+                </div> */}
+      <Row>
+        <Col size="md-6" >
+          <img src={imgUrl} alt="" />
+        </Col>
+        <Col size="md-6">
+          <h3>{title}</h3>
+          <div className='project-text'>
+            <p>{text}</p>
           </div>
-        )
-      })
-    }
-
-    return (
-      <section id="portfolio">
-
-        <div className="row">
-
-          <div className="twelve columns collapsed">
-
-            <h1>PROJECTS</h1>
-
-            <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-              {projects}
-            </div>
+          <div className='project-links'>
+            <a href={live}>Live Site</a>
+            <a href={link}>Github</a>
           </div>
-        </div>
-      </section>
-    );
-  }
+        </Col>
+      </Row>
+    </div>
+  )
 }
 
 export default ProjectGallery;

@@ -3,13 +3,15 @@
     "title": "Urban Meme Dictionary",
     "imgUrl": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
     "link": "",
-    "live": ""
+    "live": "",
+    "text": "An online store made with Vanilla JS (no external libraries!). Shop, add to your cart, and see your total. Products come from Makeup API."
    },
    {
     "title": "Urban Meme Dictionary",
     "imgUrl": "",
     "link": "",
-    "live": ""
+    "live": "",
+    "text": "A music catalog made with React that allows you search your favourite artist's top albums. Albums come from Lastfm API. Designed using UI principles from Scrimba's UI/UX course."
    },
    {
     "title": "Urban Meme Dictionary",

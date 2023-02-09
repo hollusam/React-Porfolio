@@ -3,7 +3,7 @@ import "./style.css";
 
 function Header() {
     return (
-        <div className="jumbotron welcome">
+        <div className="welcome mt-5">
             <div className = "wrapper">
             <h1 className = "display-4">
                 <span>Samuel Oluyomi</span>

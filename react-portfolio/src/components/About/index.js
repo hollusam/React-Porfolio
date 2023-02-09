@@ -3,7 +3,7 @@ import "./style.css";
 
 function About() {
     return (
-        <div className="jumbotron jumbotron-fluid">
+        <div className="mt-5">
             <div className="container wrapper">
                 <div className="about-name">
                     <h2>About Me</h2>
@@ -29,6 +29,7 @@ function About() {
                             <li><a href="#"><span class="fab fa-github"></span></a> </li>
                         </ul>
                     </div>
+                    <div className="spacer mb-5"></div>
                 </div>
             </div>
         </div>

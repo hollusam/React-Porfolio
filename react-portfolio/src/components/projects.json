@@ -1,28 +1,30 @@
 [
    {
     "title": "Urban Meme Dictionary",
-    "imgUrl": "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
+    "imgUrl": "./images/home-page.png",
     "link": "",
     "live": "",
-    "text": "An online store made with Vanilla JS (no external libraries!). Shop, add to your cart, and see your total. Products come from Makeup API."
+    "text": "Urban Meme Dictionary is a web application that allows users to browse through gifs and see their corresponding definition on Urban Dictionary. The application makes it easy for users to understand the meaning and context of the gifs and share them with their friends"
    },
    {
-    "title": "Urban Meme Dictionary",
-    "imgUrl": "",
+    "title": "Password Generator",
+    "imgUrl": "./images/Password generator.jpg",
     "link": "",
     "live": "",
-    "text": "A music catalog made with React that allows you search your favourite artist's top albums. Albums come from Lastfm API. Designed using UI principles from Scrimba's UI/UX course."
+    "text": "This password generator will generate a unique and random password. This is acheived by having 4 different options to include letters, symbols, numbers and the length of the password. It allows the user to personalize what kind of characters the password should and can have."
    },
    {
-    "title": "Urban Meme Dictionary",
-    "imgUrl": "",
+    "title": "Weather Dashboard",
+    "imgUrl": "./images/Weather-dashboard.jpg",
     "link": "",
-    "live": ""
+    "live": "",
+    "text": "Weather-Dashboard is an application to find a weather condition of a given city both the current and 5-Days forecast at the same time. The server-side API used to get response data object is retrieved from the Open Weather APi. The current weather section is including the following weather characters and date."
    },
    {
-    "title": "Urban Meme Dictionary",
-    "imgUrl": "",
+    "title": "Work Day Scheduler",
+    "imgUrl": "./images/Workday Scheduler screenshoot.png",
     "link": "",
-    "live": ""
+    "live": "",
+    "text": "This application consists of a simple weekly calendar used to schedule events for the typical work day hours from 8am-5pm. Using Moment.js to set the current time, wherever this page is opened. Based on the current time which is displayed in the header and updated each minute by calling the API set to this page."
    }
  ]

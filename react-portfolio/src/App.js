@@ -8,6 +8,7 @@ import Project from './components/Project';
 import Form from './components/Contact';
 import Footer from './components/Footer';
 import Spacer from './components/Spacer';
+import Skills from './components/Skills';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <Spacer />
       <About />
+      <Skills />
       <Spacer />
       <Project />
       <Form />

@@ -1,9 +1,25 @@
+.about-me {
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.about-pic {
+    justify-content: center;
+    align-items: center;
+}
+
 .about-me-container {
     display: flex;
     justify-content: center;
     align-items: stretch;
     margin: 45px 0;
     width: 100%;
+}
+
+.about-me-container .about-pic {
+    margin-right: 30px;
+    width: 35%;
+    align-self: start;
 }
 
 .about-name {
@@ -15,4 +31,38 @@
 .about-name h2 {
     font-weight: bold;
     text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.about-text {
+    width: 60%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.socials li {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.socials li span {
+    font-size: 4rem;
+}
+
+.fab {
+    display: inline-block;
+    font-size: normal;
+    line-height: 1;
+    font-weight: 400;
+    text-rendering: auto;
+    font-family: "Font Awesome 5 Brands";
 }

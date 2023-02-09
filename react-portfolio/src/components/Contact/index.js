@@ -82,6 +82,12 @@ class Form extends Component {
             />
             <button onClick={this.handleFormSubmit}>Submit</button>
           </form>
+          <ul className="socials">
+                            <li><a href="#"><span className="fab fa-github"></span></a> </li>
+                            <li><a href="#"><span className="fab fa-linkedin"></span></a> </li>
+                            <li><a href="#"><span className="fab fa-twitter"></span></a> </li>
+                            <li><a href="#"><span className="fab fa-instagram"></span></a> </li>
+                        </ul>
         </div>
       );
   }

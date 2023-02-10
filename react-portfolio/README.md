@@ -14,7 +14,7 @@ Use this portfolio page to view my works, know about my skills and also get in t
 
 ## Screenshot
 
-![screenshot](./react-portfolio/public/images/React%20port.jpg)
+![screenshot](./public/images/React%20port.jpg)
 
 
 ## Contact

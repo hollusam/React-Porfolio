@@ -19,3 +19,18 @@ nav {
 .nav-link:hover {
     border-bottom: 5px solid #ffa818;
 }
+
+.navbar-toggler {
+    background-color: #f8f8f8 !important;
+}
+
+.burger-menu {
+    display: block;
+    /* width: 50px; */
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    /* opacity: 0; */
+    z-index: 2;
+}

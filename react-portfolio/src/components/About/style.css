@@ -31,6 +31,7 @@
 .about-name h2 {
     font-weight: bold;
     text-transform: uppercase;
+    box-shadow: inset 0px -5px 0px 0px #ffa818;
 }
 
 img {
@@ -55,7 +56,21 @@ img {
 }
 
 .socials li span {
-    font-size: 4rem;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.socials li span:hover {
+    color: #ffa818;
+}
+.socials a .resume {
+    text-transform: uppercase;
+    align-content: center !important;
+}
+/* .socials .resume:hover {
+    border-bottom: 5px solid #ffa818;  
+} */
+.socials .resume:hover {
+    text-decoration: none !important;  
 }
 
 .fab {

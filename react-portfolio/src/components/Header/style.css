@@ -1,5 +1,31 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .display-4 {
     font-size: 3rem;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.arrow {
+    font-size: 5.5rem;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    display: inline;
+    text-transform: none;
+    line-height: 1;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+}
+
+.arrow:hover {
+    color: #ffa818;
 }

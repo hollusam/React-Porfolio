@@ -4,7 +4,7 @@ import ProjectGallery from "../Project-gallery";
 
 function Project() {
     return (
-        <div>
+        <div className="grid">
             <div className="project-name">
                     <h2>Projects</h2>
                 </div>

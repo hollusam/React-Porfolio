@@ -39,3 +39,7 @@ h2 {
 .skills h2 span {
     box-shadow: inset 0px -5px 0px 0px #ffa818;
 }
+
+.skills-title span:hover {
+    color: #ffa818;
+}

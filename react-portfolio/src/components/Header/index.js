@@ -3,7 +3,7 @@ import "./style.css";
 
 function Header() {
     return (
-        <div className="welcome mt-5">
+        <div className="welcome mt-5" id='home'>
             <div className = "wrapper">
             <h1 className = "display-4">
                 <span>Samuel Oluyomi</span>
@@ -13,7 +13,10 @@ function Header() {
                 <span>Web Developer</span>
                 <br />
             </h1> 
-            </div>   
+            </div>
+            <a href='#about'>
+            <span aria-hidden="true" className="material-icons arrow">expand_more</span>
+            </a>   
         </div>
     );
 }

@@ -6,33 +6,42 @@ class Form extends Component {
   state = {
     firstName: "",
     lastName: "",
-    password: ""
+    email: "",
+    // message:""
   };
+
 
   handleInputChange = event => {
     // Getting the value and name of the input which triggered the change
     let value = event.target.value;
     const name = event.target.name;
+    const message = event.target.message;
 
     if (name === "password") {
       value = value.substring(0, 15);
     }
     // Updating the input's state
     this.setState({
-      [name]: value
+      [name]: value,
+      [message]: value
     });
   };
 
   handleFormSubmit = event => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
+    const validRegex = '@';
+
     if (!this.state.firstName || !this.state.lastName) {
       alert("Fill out your first and last name please!");
-    } else if (this.state.password.length < 6) {
+    } else if (this.state.email.match(validRegex)) {
       alert(
-        `Choose a more secure password ${this.state.firstName} ${this.state
+        `Valid email address ${this.state.firstName} ${this.state
           .lastName}`
       );
+    } else if (this.state.message = "") {
+      alert("This space cannot be empty");
+
     } else {
       alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
     }
@@ -40,18 +49,20 @@ class Form extends Component {
     this.setState({
       firstName: "",
       lastName: "",
-      password: ""
+      email: "",
+      message: ""
     });
   };
 
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
-        <div>
+        <div id="contact">
            <div className="about-name mt-5">
                     <h2>Contact</h2>
                 </div>
-          <form className="form">
+            <div className="form-container">
+            <form className="form">
             <input
               value={this.state.firstName}
               name="firstName"
@@ -77,16 +88,27 @@ class Form extends Component {
               value={this.state.message}
               name="Message"
               onChange={this.handleInputChange}
-              row="10"
-              placeholder="Message"
+              rows="6"
+              cols="50"
             />
-            <button onClick={this.handleFormSubmit}>Submit</button>
+            <button onClick={this.handleFormSubmit}>Get in touch</button>
           </form>
-          <ul className="socials">
-                            <li><a href="#"><span className="fab fa-github"></span></a> </li>
-                            <li><a href="#"><span className="fab fa-linkedin"></span></a> </li>
-                            <li><a href="#"><span className="fab fa-twitter"></span></a> </li>
-                            <li><a href="#"><span className="fab fa-instagram"></span></a> </li>
+          <div className="form-text">
+            <p>If you have any questions about me or my projects, or (politely) argue about the best albums of the 2010s, I'm your girl!</p>
+            <br />
+            <p>
+            I'm available to grab a coffee and chat! Drop a comment, question, concern, or Spotify playlist, and thanks for stopping by!
+            </p>
+            <br />
+            <p>Straight shot to my inbox: <a href="mailto:oluyomisamuels@gmail.com?subject=Getting in Touch with Samuel Oluyomi" target="_blank" >Email</a>
+            </p>
+          </div>
+            </div>
+            <ul className="socials">
+            <li><a href="https://github.com/hollusam" target="_blank"><span className="fab fa-github"></span></a> </li>
+                            <li><a href="https://www.linkedin.com/in/oluyomi-samuel" target="_blank"><span className="fab fa-linkedin"></span></a> </li>
+                            <li><a href="https://twitter.com/hollusam"><span className="fab fa-twitter" target="_blank"></span></a> </li>
+                            <li><a href="https://instagram.com/hollusam" target="_blank"><span className="fab fa-instagram"></span></a> </li>
                         </ul>
         </div>
       );

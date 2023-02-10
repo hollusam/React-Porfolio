@@ -24,21 +24,27 @@
 }
 
 .project-container {
+    padding: 20px;
     overflow-x: hidden;
 }
 
 img {
     width: 100%;
     height: auto;
-    display: block;
 }
 
 .project-links {
-    margin: 10px 0;
+    margin: 40px 0;
 }
 
-.project a {
-    text-transform: uppercase;
+.project-links a {
+    padding: 5px;
+    text-decoration: none !important;
+   text-transform: uppercase;
+   font-size: 20px;
+}
+.project-links a:hover {
+    border-bottom: 5px solid #ffa818;
 }
 
 .project-name {
@@ -51,4 +57,22 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 100px;
+}
+
+.project-container h3 {
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.project p {
+    margin: 25px 0;
+}
+
+.project-name h2 {
+    box-shadow: inset 0px -5px 0px 0px #ffa818;
+}
+
+.row {
+    padding: 20px !important;
 }

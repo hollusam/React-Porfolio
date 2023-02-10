@@ -5,22 +5,20 @@ import "./style.css";
 
 function ProjectGallery({ title, text, imgUrl, link, live }) {
   return (
-    <div className="container project-container">
-      {/* <div className="project-name">
-                    <h2>Projects</h2>
-                </div> */}
-      <Row>
-        <Col size="md-6" >
+    <div className="container project-container" id="projects">
+      <Row className="project">
+        <Col size="md-6" className="mockup">
           <img src={imgUrl} alt="" />
         </Col>
-        <Col size="md-6">
+        <Col size="md-6" className='project-text'>
           <h3>{title}</h3>
-          <div className='project-text'>
+          <div>
             <p>{text}</p>
           </div>
           <div className='project-links'>
-            <a href={live}>Live Site</a>
-            <a href={link}>Github</a>
+            <a href={live} target="_blank">Live Site</a>
+            <span>|</span>
+            <a href={link} target="_blank">Github</a>
           </div>
         </Col>
       </Row>

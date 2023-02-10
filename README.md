@@ -21,7 +21,7 @@ Use this portfolio page to view my works, know about my skills and also get in t
 
 Samuel: https://instagram.com/hollusam
 
-Project link: https://hollusam.github.io/React-Portfolio/
+Project link: https://samuel-oluyomi.netlify.app/
 
 ## Acknowledgement
 

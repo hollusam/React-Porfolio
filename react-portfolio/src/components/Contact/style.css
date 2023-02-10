@@ -48,3 +48,29 @@
     margin-left: 50px;
     align-self: stretch;
   }
+  
+  @media only screen and (max-width: 780px) {
+    .form-container {
+      flex-direction: column-reverse;
+    }
+
+    .form-container .form {
+      width: 95%;
+    }
+
+    .form {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .form-container .form-text {
+      margin-bottom: 50px;
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    .form-text p {
+      font-size: 1.6rem;
+    }
+
+}

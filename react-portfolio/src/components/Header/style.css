@@ -2,14 +2,17 @@ html {
     scroll-behavior: smooth;
 }
 
+.welcome {
+    margin-top: 10%;
+}
 .display-4 {
-    font-size: 3rem;
+    font-size: 2.5rem !important;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .arrow {
-    font-size: 5.5rem;
+    font-size: 4.5rem;
     left: 50%;
     right: 50%;
     position: absolute;
@@ -28,4 +31,22 @@ html {
 
 .arrow:hover {
     color: #ffa818;
+}
+
+@media only screen and (max-width: 780px) {
+    .display-4 {
+        font-size: 2rem !important;
+        margin-top: 20px !important;
+    }
+
+    .welcome {
+        margin-top: 45%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .arrow {
+        left: 40%;
+        margin-top: 30%;
+    }
 }

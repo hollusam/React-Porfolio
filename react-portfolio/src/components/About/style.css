@@ -81,3 +81,27 @@ img {
     text-rendering: auto;
     font-family: "Font Awesome 5 Brands";
 }
+
+@media only screen and (max-width: 780px) {
+    .about-me-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-container .about-pic {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .about-me-container .about-text {
+        margin-top: 30%;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .about-me-container .about-pic {
+        width: 90%;
+    }
+}

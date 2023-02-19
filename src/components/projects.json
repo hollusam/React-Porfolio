@@ -26,5 +26,19 @@
     "link": "https://github.com/hollusam/Work-Day-Scheduler",
     "live": "https://hollusam.github.io/Work-Day-Scheduler/",
     "text": "This application consists of a simple weekly calendar used to schedule events for the typical work day hours from 8am-5pm. Using Moment.js to set the current time, wherever this page is opened. Based on the current time which is displayed in the header and updated each minute by calling the API set to this page."
+   },
+   {
+    "title": "Coding Quiz Challenge",
+    "imgUrl": "./images/Code Quiz.jpg",
+    "link": "https://github.com/hollusam/code-quiz",
+    "live": "https://hollusam.github.io/code-quiz/",
+    "text": "This code-quiz is a javascript quiz app targeted to help beginners practice to be more vast with basic concept of javascript. It is a timed quiz app where any wrong choice will result in reduction of the time which is the result of the outcome."
+   },
+   {
+    "title": "Explore Italy",
+    "imgUrl": "./images/Explore.jpg",
+    "link": "https://github.com/hollusam/Task-3",
+    "live": "https://task-solution.netlify.app/",
+    "text": "This web app was created solely for people looking to go on a vacation to Italy. If you`re thinking about visiting Italy for a holiday, then here are some things you should know before traveling there: Italy is a country that has so much to offer. The people, the culture, the food, and everything else."
    }
  ]

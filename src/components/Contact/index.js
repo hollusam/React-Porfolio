@@ -92,7 +92,7 @@ function Form() {
           </form>
           
           <div className="form-text">
-            <p>If you have any questions about me or my projects, or (politely) argue about the best albums of the 2010s, I'm your girl!</p>
+            <p>If you have any questions about me or my projects, or (politely) talk about the best football team around the country, I'm your man!</p>
             <br />
             <p>
               I'm available to grab a coffee and chat! Drop a comment, question, concern, or Spotify playlist, and thanks for stopping by!

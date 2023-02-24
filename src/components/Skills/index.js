@@ -1,6 +1,6 @@
 import React from 'react';
 import "./style.css";
-import { DiJqueryLogo } from "react-icons/di";
+
 
 
 function Skills() {

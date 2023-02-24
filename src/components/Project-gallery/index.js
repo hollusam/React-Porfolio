@@ -16,9 +16,9 @@ function ProjectGallery({ title, text, imgUrl, link, live }) {
             <p>{text}</p>
           </div>
           <div className='project-links'>
-            <a href={live} target="_blank">Live Site</a>
+            <a href={live} target="_blank" rel="noreferrer">Live Site</a>
             <span>|</span>
-            <a href={link} target="_blank">Github</a>
+            <a href={link} target="_blank" rel="noreferrer">Github</a>
           </div>
         </Col>
       </Row>

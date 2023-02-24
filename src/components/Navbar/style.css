@@ -1,7 +1,6 @@
 .navbar-nav {
     display: flex;
     justify-content: flex-end;
-    height: 10vh;
 }
 
 nav {
@@ -22,8 +21,15 @@ nav {
 
 .navbar-toggler {
     background-color: #f8f8f8 !important;
+    color: #0d090a !important;
 }
 
+@media (max-width: 767px) {
+    a.nav-link {
+      display: inline-block;
+    }
+  }
+  
 .burger-menu {
     display: block;
     /* width: 50px; */

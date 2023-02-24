@@ -1,118 +1,117 @@
-import React, { Component } from "react";
+import React from "react";
+import { useState } from "react";
 import "./style.css";
 
-class Form extends Component {
-  // Setting the component's initial state
-  state = {
+function Form() {
+  const [success, setSuccess] = useState(false);
+  const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    // message:""
-  };
+    message: "",
+    access_key: "d9f1e616-b4c4-4363-89fb-cb9288769d6d",
+  });
 
-
-  handleInputChange = event => {
-    // Getting the value and name of the input which triggered the change
-    let value = event.target.value;
-    const name = event.target.name;
-    const message = event.target.message;
-
-    if (name === "password") {
-      value = value.substring(0, 15);
-    }
-    // Updating the input's state
-    this.setState({
-      [name]: value,
-      [message]: value
+  const handleChange = (event) => {
+    setFormData({
+      ...formData,
+      [event.target.name]: event.target.value,
     });
   };
 
-  handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
+  const handleSubmit = (event) => {
     event.preventDefault();
-    const validRegex = '@';
 
-    if (!this.state.firstName || !this.state.lastName) {
-      alert("Fill out your first and last name please!");
-    } else if (this.state.email.match(validRegex)) {
-      alert(
-        `Valid email address ${this.state.firstName} ${this.state
-          .lastName}`
-      );
-    } else if (this.state.message = "") {
-      alert("This space cannot be empty");
+    const data = JSON.stringify(formData);
 
-    } else {
-      alert(`Hello ${this.state.firstName} ${this.state.lastName}`);
-    }
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: data,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setSuccess(true);
+        setFormData({
+          ...formData,
+          firstName: "",
+          lastName: "",
+          email: "",
+          message: "",
+        });
 
-    this.setState({
-      firstName: "",
-      lastName: "",
-      email: "",
-      message: ""
-    });
+        setTimeout(() => {
+          setSuccess(false);
+        }, 3000);
+      })
+      .catch((err) => console.log(err));
   };
 
-  render() {
-    // Notice how each input has a `value`, `name`, and `onChange` prop
-    return (
-        <div id="contact">
-           <div className="about-name mt-5">
-                    <h2>Contact</h2>
-                </div>
-            <div className="form-container">
-            <form className="form">
+  // Notice how each input has a `value`, `name`, and `onChange` prop
+  return (
+    <>
+      <div id="contact">
+        <div className="about-name mt-5">
+          <h2>Contact</h2>
+        </div>
+        <div className="form-container">
+          <form onSubmit={handleSubmit} className="form">
             <input
-              value={this.state.firstName}
+              value={formData.firstName}
               name="firstName"
-              onChange={this.handleInputChange}
+              onChange={handleChange}
               type="text"
               placeholder="First Name"
             />
             <input
-              value={this.state.lastName}
               name="lastName"
-              onChange={this.handleInputChange}
+              value={formData.lastName}
+              onChange={handleChange}
               type="text"
               placeholder="Last Name"
             />
             <input
-              value={this.state.email}
+              value={formData.email}
               name="email"
-              onChange={this.handleInputChange}
+              onChange={handleChange}
               type="text"
               placeholder="Email"
             />
             <textarea
-              value={this.state.message}
-              name="Message"
-              onChange={this.handleInputChange}
+              value={formData.message}
+              name="message"
+              onChange={handleChange}
+              placeholder="Enter your message..."
               rows="6"
               cols="50"
             />
-            <button onClick={this.handleFormSubmit}>Get in touch</button>
+            <button className="submitBtn">Get in touch</button>
           </form>
+          
           <div className="form-text">
             <p>If you have any questions about me or my projects, or (politely) argue about the best albums of the 2010s, I'm your girl!</p>
             <br />
             <p>
-            I'm available to grab a coffee and chat! Drop a comment, question, concern, or Spotify playlist, and thanks for stopping by!
+              I'm available to grab a coffee and chat! Drop a comment, question, concern, or Spotify playlist, and thanks for stopping by!
             </p>
             <br />
-            <p>Straight shot to my inbox: <a href="mailto:oluyomisamuels@gmail.com?subject=Getting in Touch with Samuel Oluyomi" target="_blank" >Email</a>
+            <p>Straight shot to my inbox: <a href="mailto:oluyomisamuels@gmail.com?subject=Getting in Touch with Samuel Oluyomi" target="_blank" rel="noreferrer">Email</a>
             </p>
           </div>
-            </div>
-            <ul className="socials">
-            <li><a href="https://github.com/hollusam" target="_blank"><span className="fab fa-github"></span></a> </li>
-                            <li><a href="https://www.linkedin.com/in/oluyomi-samuel" target="_blank"><span className="fab fa-linkedin"></span></a> </li>
-                            <li><a href="https://twitter.com/hollusam"><span className="fab fa-twitter" target="_blank"></span></a> </li>
-                            <li><a href="https://instagram.com/hollusam" target="_blank"><span className="fab fa-instagram"></span></a> </li>
-                        </ul>
         </div>
-      );
-  }
+        {success && <p className="success">Form Submitted Successfully</p>}
+        <ul className="socials">
+          <li><a href="https://github.com/hollusam" target="_blank" rel="noreferrer"><span className="fab fa-github"></span></a> </li>
+          <li><a href="https://www.linkedin.com/in/oluyomi-samuel" target="_blank" rel="noreferrer"><span className="fab fa-linkedin"></span></a> </li>
+          <li><a href="https://twitter.com/hollusam"><span className="fab fa-twitter" target="_blank" rel="noreferrer"></span></a> </li>
+          <li><a href="https://instagram.com/hollusam" target="_blank" rel="noreferrer"><span className="fab fa-instagram"></span></a> </li>
+        </ul>
+      </div>
+    </>
+  );
 }
 
 export default Form;

@@ -10,7 +10,7 @@ function About() {
                 </div>
                 <div className="about-me-container">
                     <div className="about-pic">
-                        <img src="./images/profileIMG.png"></img>
+                        <img src="./images/profileIMG.png" alt="Samuel Oluyomi"></img>
                     </div>
                     <div className="about-text">
                         <p>I'm a UK based frontend developer, web designer & freelancer focused on crafting clean & user-friendly experiences.
@@ -25,11 +25,11 @@ function About() {
                             <a href="#contact">below</a> or check me out at:
                         </p>
                         <ul className="socials">
-                            <li><a href="https://github.com/hollusam" target="_blank"><span className="fab fa-github"></span></a> </li>
-                            <li><a href="https://www.linkedin.com/in/oluyomi-samuel" target="_blank"><span className="fab fa-linkedin"></span></a> </li>
-                            <li><a href="https://twitter.com/hollusam"><span className="fab fa-twitter" target="_blank"></span></a> </li>
-                            <li><a href="https://instagram.com/hollusam" target="_blank"><span className="fab fa-instagram"></span></a> </li>
-                            <li><a href="https://drive.google.com/file/d/1rwZ3xPkCVl19KNo9Xxr-7qZOinZqHTq6/view?usp=sharing" className="resume" target="_blank"><span>Resume</span></a> </li>
+                            <li><a href="https://github.com/hollusam" target="_blank" rel="noreferrer"><span className="fab fa-github"></span></a> </li>
+                            <li><a href="https://www.linkedin.com/in/oluyomi-samuel" target="_blank" rel="noreferrer"><span className="fab fa-linkedin"></span></a> </li>
+                            <li><a href="https://twitter.com/hollusam"><span className="fab fa-twitter" target="_blank" rel="noreferrer"></span></a> </li>
+                            <li><a href="https://instagram.com/hollusam" target="_blank" rel="noreferrer"><span className="fab fa-instagram"></span></a> </li>
+                            <li><a href="https://drive.google.com/file/d/1rwZ3xPkCVl19KNo9Xxr-7qZOinZqHTq6/view?usp=sharing" className="resume" target="_blank" rel="noreferrer"><span>Resume</span></a> </li>
                         </ul>
                     </div>
                 </div>

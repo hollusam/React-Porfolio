@@ -48,6 +48,12 @@
     margin-left: 50px;
     align-self: stretch;
   }
+
+  .success {
+    text-align: center;
+    color: lightseagreen;
+    margin-top: 15px;
+}
   
   @media only screen and (max-width: 780px) {
     .form-container {

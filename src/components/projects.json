@@ -1,4 +1,11 @@
 [
+  {
+    "title": "Tea Station",
+    "imgUrl": "./images/Tea station screenshot.jpg",
+    "link": "https://github.com/hollusam/tea-station",
+    "live": "https://hollusam.github.io/tea-station/",
+    "text": "Tea station is a website where you can get over hundreds of flavours of specially crafted tea and their prices. It is a well designed site with a beautiful user-interface and easily accessibility."
+   },
    {
     "title": "Urban Meme Dictionary",
     "imgUrl": "./images/home-page.png",
@@ -33,12 +40,5 @@
     "link": "https://github.com/hollusam/code-quiz",
     "live": "https://hollusam.github.io/code-quiz/",
     "text": "This code-quiz is a javascript quiz app targeted to help beginners practice to be more vast with basic concept of javascript. It is a timed quiz app where any wrong choice will result in reduction of the time which is the result of the outcome."
-   },
-   {
-    "title": "Explore Italy",
-    "imgUrl": "./images/Explore.jpg",
-    "link": "https://github.com/hollusam/Task-3",
-    "live": "https://task-solution.netlify.app/",
-    "text": "This web app was created solely for people looking to go on a vacation to Italy. If you`re thinking about visiting Italy for a holiday, then here are some things you should know before traveling there: Italy is a country that has so much to offer. The people, the culture, the food, and everything else."
    }
  ]
